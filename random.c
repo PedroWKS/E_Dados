@@ -5,8 +5,9 @@
 int main() {
   MTRand r = seedRand(1234567);
   int i;
-  for(i=0; i<10; i++) {
-    printf("%f\n", genRand(&r));
+   for(i=0; i<10; i++) {
+   printf("%d\n",(int)( genRand(&r)*1000000));
   }
   return 0;
 }
+
